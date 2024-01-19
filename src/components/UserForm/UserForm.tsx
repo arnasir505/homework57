@@ -78,6 +78,7 @@ const UserForm: React.FC<UserFormProps> = ({ onSubmit }) => {
           name='role'
           id='role'
           className='form-select'
+          required
           onChange={changeUser}
           value={user.role}
         >
