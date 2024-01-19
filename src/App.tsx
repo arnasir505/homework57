@@ -14,14 +14,8 @@ function App() {
     {
       name: 'Janna Dark',
       email: 'jannadark@gmail.com',
-      isActive: true,
-      role: 'user',
-    },
-    {
-      name: 'Rustam Bigfoot',
-      email: 'rustambig@gmail.com',
       isActive: false,
-      role: 'editor',
+      role: 'user',
     },
   ]);
 
