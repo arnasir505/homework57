@@ -1,7 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { User } from '../../types';
+import UserItem from '../UserItem/UserItem';
 
-const Users = () => {
-  return <div className='col'>Users</div>;
+interface UsersProps {
+  users: User[];
 }
 
-export default Users
+const Users: React.FC<UsersProps> = ({ users }) => {
+  return (
+    <div>
+      {users.map((user) => {
+        return <UserItem user={user} key={Math.random()} />;
+      })}
+    </div>
+  );
+};
+
+export default Users;
